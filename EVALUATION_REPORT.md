@@ -18,12 +18,10 @@ hand-checked answers to calculate:
 - **F1** — one combined score balancing the two.
 
 A redaction counts as correct if it overlaps the correct answer (rather
-than requiring a perfect word-for-word match), since what actually matters
-for privacy is whether the sensitive text is gone from the document, not
-whether the boundary is pixel-perfect.
+than requiring a perfect word-for-word match).
 
 SSNs, credit cards, IP addresses, and dates of birth don't appear anywhere
-in this document at all (it's a company filing, not personal records), so
+in this document at all, so
 those four are tested separately with made-up example sentences instead —
 see `tests/test_detectors.py`.
 
